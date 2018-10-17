@@ -13,7 +13,7 @@ class PostgresqlMysqlFdw < Formula
   def postgresql
     # Follow the PostgreSQL linked keg back to the active Postgres installation
     # as it is common for people to avoid upgrading Postgres.
-    Formula.factory('postgresql').linked_keg.realpath
+    Formulary.factory('postgresql').linked_keg.realpath
   end
 
   def install
