@@ -2,9 +2,9 @@ require 'formula'
 
 class PostgresqlMysqlFdw < Formula
   version '1.0'
-  homepage 'https://github.com/dpage/mysql_fdw'
-  url 'https://github.com/dpage/mysql_fdw/archive/4c48adf0f9770722484c8b8dc4d7699d87044c09.tar.gz'
-  sha256 '01e2fb8e94d55e983d43e21bfe5ba3d9119e6ef841855ce43e6410e007de8d10'
+  homepage 'https://github.com/EnterpriseDB/mysql_fdw'
+  url 'https://github.com/EnterpriseDB/mysql_fdw/archive/REL-2_3_0.zip'
+  sha256 '74970b5c5f11ccab19320b7317247e5066959589fb1ead0530da0eb1901e58b3'
 
   depends_on :mysql
   depends_on 'postgresql'
