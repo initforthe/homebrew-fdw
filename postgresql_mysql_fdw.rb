@@ -32,10 +32,7 @@ class PostgresqlMysqlFdw < Formula
     so = Dir['stage/**/*.so']
     extensions = Dir['stage/**/extension/*']
 
-    (postgresql/'lib').install so
-
-    # Install extension scripts to the Postgres keg.
-    # `CREATE EXTENSION mysql_fdw;` won't work if these are located elsewhere.
-    (postgresql/'share/postgresql/extension').install extensions
+    lib.install Dir["stage/**/lib/*"]
+    (share/"postgresql/extension").install Dir["stage/**/share/postgresql/extension/*"]
   end
 end
