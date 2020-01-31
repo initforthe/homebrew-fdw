@@ -3,8 +3,8 @@ require 'formula'
 class PostgresqlMysqlFdw < Formula
   version '1.0'
   homepage 'https://github.com/EnterpriseDB/mysql_fdw'
-  url 'https://github.com/EnterpriseDB/mysql_fdw/archive/REL-2_5_1.zip'
-  sha256 'cf9cd4e0a2906fce5505bf13fecbe77d5ac4c707af0e27d5dc1526dbb6e722a8'
+  url 'https://github.com/EnterpriseDB/mysql_fdw/archive/REL-2_5_3.zip'
+  sha256 '96b442972d60e0d57ecd8ca45644257719a51bd3eee20c696669d6a0856cb6b2'
 
   depends_on 'mysql@5.7'
   depends_on 'postgresql'
